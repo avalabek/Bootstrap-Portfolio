@@ -44,7 +44,7 @@ li a {
 #name {
 	position:relative;
 	left:110px;
-	bottom:15px;
+	top:45px;
 	width:320px;
 	font-size:25px;
 	font-family: "Georgia","Times", "Times New Roman",serif;
@@ -71,7 +71,7 @@ li a {
 	border-width:thin;
 	border-color:#dddddd;
 	margin-top:50px;
-	margin-right:190px;
+	margin-right:90px;
 	text-align:center;
 	padding:20px;
 	background-color:#ffffff;
@@ -80,7 +80,6 @@ li a {
 }
 .icon {
 	position:relative;
-	margin-left:50px;
 	width:25%;
 	height:25%;
 }
@@ -97,8 +96,8 @@ li a {
 	border-style: solid;
 	border-color:#dddddd;
 	border-width:thin;
-	margin-right:503px;
-	margin-left:110px;
+	margin-right:50px;
+	margin-left:50px;
 	margin-top:50px;
 	margin-bottom:50px;
 
