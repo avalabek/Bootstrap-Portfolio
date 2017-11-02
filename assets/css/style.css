@@ -102,6 +102,11 @@ li a {
 	margin-bottom:50px;
 
 }
+#mod{
+	margin-top:-130px;
+
+}
+
 h3 {
 	padding-bottom:20px;
 	color: #4aaaa5;
@@ -208,6 +213,11 @@ input.submit{
 	clear:both;
 }
 /*images on portfolio page----------------*/
+.thumbnail{
+	padding-left:20px;
+	margin-left:50px;
+
+}
 .tile {
 	position:relative;
 	box-sizing: border-box;
@@ -245,7 +255,8 @@ input.submit{
   position:absolute;
   top:340px;
   left:10px;
-  width:37%;	
+  width:37%;
+  z-index:10;	
 }
 #rpg{
   margin-left:10px;
