@@ -2,7 +2,12 @@
 	<html lang="en-us">
 <head>
   	<meta charset="UTF-8">
+  	<!---include the below code to make it responsive:viewport boilerplate-->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Portfolio</title>
+<!--bootstrap and javascript links-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!--the reset.css must be above the style.css as loads in order -->
 		<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
@@ -10,20 +15,89 @@
 </head>
 
 <body style="background-image:url('assets/images/topography.png')">
-	<div>
- 		
+
+<!--navbar  bootstrap start here -->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid" >
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <!--<div class="navbar-header">-->
+    	<a class="navbar-brand" id="name" href="#">Andreya Valabek</a>
+      <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>-->
+    <!--  <a class="navbar-brand" id="name" href="#">Andreya Valabek</a>-->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+           </ul>
  
-  		<div id="name">Andreya Valabek</div>	
-  		<ul>
-  			<li><a id="contact" href="contact.html">Contact</a></li>
-  			<li><a href="portfolio.html">Portfolio</a></li>
-  			<li><a href="index.html">About</a></li>
- 		</ul>
- 	
- 	</div>
-<!--end navigation bar-->
+
+      <ul class="nav navbar-nav navbar-right">
+      	<li class="active"><a href="index.html">About <span class="sr-only"></span></a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--end navbar-->
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="mainBody">
+				<h2 class="title">Portfolio</h2>
+					<div class="row">
+						<div class="col-md-4">
+						<img class="thumbnail" src="assets/images/205.jpg" alt="headphones" style="width:120%">
+						</div>
+							<div class="col-md-4">
+							<img class="thumbnail" src="assets/images/206.jpg" alt="bright colors" style="width:120%">
+							</div>	
+						</div>
+					
+				<div class="row">
+					<div class="col-md-4"> 
+					<img class="thumbnail" src="assets/images/204.jpg" alt="yellow" style="width:120%">
+					</div>
+						<div class="col-md-4">
+						<img class="thumbnail" src="assets/images/201.jpg" alt="disco ball" style="width:120%">	
+						</div>
+				</div>
+					<div class="row">
+						<div class="col-md-4">
+							<img class="thumbnail" src="assets/images/202.jpg" alt="guitar" style="width:120%">
+						</div>
+						<div class="col-md-4"></div>	
+					</div>
+
+			</div>
+		</div>
+	</div>        
 
 
+
+
+<!--starting over, using index file as starting point bootstrap main body
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+		<div class="mainBody">
+			<h2 class="title">Portfolio</h2>
+<div class="row">
+	<div class="col-md-8"></div>
+	<div class="col-md-1"></div>
+<div class="row"></div>
+<div class="col-md-9"></div>
+<div class="col-md-3">
 <div class="sidebar"> 
 		 	<h3>Connect with Me</h3>
 			<a href="https://github.com/avalabek" target="_blank">
@@ -36,23 +110,94 @@
 			<img class="icon" id="stackoverflow" src="https://cdn3.iconfinder.com/data/icons/inficons/128/stackoverflow.png" alt="Stackoverflow icon">
 		</a>
 		</div>
-		<div class="mainBody">
-			<h2 class="title">Portfolio</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-				<img class="tile" src="assets/images/205.jpg" alt="headphones">
-				<img class="tile" src="assets/images/206.jpg" alt="bright colors">
-				<img class="tile" src="assets/images/204.jpg" alt="yellow design">
-				<img class="tile" id="rightTileTwo" src="assets/images/201.jpg" alt="disco ball">
-				<img class="tile" id="rightTile" src="assets/images/202.jpg" alt="guitar in lights">
-		</div>
 
-		<div class="banner" id="hangman">Hangman</div>
-		<div class="banner" id="rpg">RPG Game</div>
-		<div class="banner" id="trivia">Trivia Game</div>
-		<div class="banner" id="rutgers">Rutgers Info Widget</div>
-		<div class="banner" id="rock">Rock Paper Scissors</div>
+
+
+
+
+
+	<div class="row">
+	
+	<div class="col-md-3">
+    <div class="thumbnail">
+      <a href="assets/images/205.jpg">
+        <img class="tile" src="assets/images/205.jpg" alt="headphones" style="width:90%">
+        <div class="banner" id="hangman">Hangman</div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="assets/images/206.jpg">
+      	<img class="tile" src="assets/images/206.jpg" alt="bright colors" style="width:90%">
+          <div class="banner" id="rpg">RPG Game</div>
+          <p>RPG Game</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="assets/images/204.jpg">
+      	<img class="tile" src="assets/images/204.jpg" alt="yellow design" style="width:90%">
+          <div class="caption">
+          <p>Trivia Game</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+    <div class="thumbnail">
+      <a href="assets/images/201.jpg">
+      	<img class="tile" id="rightTileTwo" src="assets/images/201.jpg" alt="disco ball" style="width:90%">
+            <div class="caption">
+          <p>Rutgers Info Widget</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="assets/images/202.jpg">
+      	<img class="tile" id="rightTileTwo" src="assets/images/202.jpg" alt="guitar in lights" style="width:90%">
+            <div class="caption">
+          <p>Rock Paper Scissors</p>
+        </div>
+      </a>
+    </div>
+  </div>
 
 		<br>
 
+</div>
+</div>
+</div>
+
+
 		<footer class="footer"> Copyright @ 2017 Andreya Valabek</footer>
-</body>
+</body>-->
